@@ -82,11 +82,19 @@ body {
         background-color: #2f8be0;
         border-radius: 45px;
         text-align: center;
+        transition: .1s ease-in-out;
+        cursor: pointer;
         a {
             font-size: 1.2vw;
             color: #fff;
         }
     }
+}
+
+.btn:hover {
+    cursor: pointer;
+        background-color: black;
+        transition: .1s ease-in-out;
 }
 
 .landingImage {
@@ -314,6 +322,7 @@ ol {
         color: #e0501b;
     }
 }
+
 
 
 

@@ -105,11 +105,21 @@ body {
   background-color: #2f8be0;
   border-radius: 45px;
   text-align: center;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
 }
 
 .landingText .btn a {
   font-size: 1.2vw;
   color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .landingImage img {
