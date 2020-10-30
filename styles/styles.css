@@ -1,108 +1,370 @@
-html, body {
-    background-color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    overflow: hidden !important;
-    margin: 0px !important;
-    padding: 0px !important;
+html,
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 * {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 0 25px;
-    background-color: #fff;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.nav .links a {
-    margin-right: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-}
-
-.nav .links .mainlink {
-    color: #e0501b;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px 0 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .nav h4 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.nav .links a {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.nav .links a:hover {
+  color: #e0501b;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+.nav .links .mainlink {
+  color: #e0501b;
+  cursor: pointer;
 }
 
 /* LANDING CSS */
 .landing {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw 0 10vw;
-    height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw 0 10vw;
+  height: 100vh;
 }
 
 .landingText h1 {
-    font-size: 6vw;
-    margin: 0 !important;
+  font-size: 6vw;
+  margin: 0 !important;
 }
 
 .landingText h3 {
-    margin: 6px !important;
-    font-size: 20px;
-    opacity: 0.3;
-    line-height: 30px;
+  margin: 6px !important;
+  font-size: 20px;
+  opacity: 0.3;
+  line-height: 30px;
 }
 
 .landingText .btn {
-    width: 120px;
-    margin-top: 30px;
-    font-size: 1.2vw;
-    padding: 14px 20px 14px 20px;
-    background-color: #2f8be0;
-    border-radius: 45px;
-    text-align: center;
+  width: 120px;
+  margin-top: 30px;
+  font-size: 1.2vw;
+  padding: 14px 20px 14px 20px;
+  background-color: #2f8be0;
+  border-radius: 45px;
+  text-align: center;
 }
 
 .landingText .btn a {
-    font-size: 1.2vw;
-    color: #fff;
+  font-size: 1.2vw;
+  color: #fff;
 }
 
 .landingImage img {
-    width: 28vw;
+  width: 28vw;
 }
 
 /* ABOUT CSS */
 .about {
-    height: 600px;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 600px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutText {
-    position: relative;
-    padding: 0 50px;
-    height: inherit;
+  position: relative;
+  padding: 0 50px;
+  height: inherit;
 }
 
 .aboutText h1 {
-    position: relative;
-    left: 110px;
+  position: relative;
+  left: 110px;
 }
+
+.aboutText img {
+  width: 10vw;
+  position: absolute;
+  top: 50px;
+}
+
+.aboutList {
+  width: 50%;
+}
+
+ol {
+  list-style: none;
+  color: #e0501b;
+}
+
+ol li {
+  font-size: 34px;
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+ol li p {
+  font-size: 16px;
+  color: #000000;
+  padding-left: 60px;
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+ol li span {
+  position: absolute;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+/* INFO SECTION CSS */
+.infoSection {
+  height: 600px;
+}
+
+.infoHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.infoCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0 40px 0;
+}
+
+.infoCards .card {
+  position: relative;
+  height: 360px;
+  width: 350px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infoCards .one .cardoneImg {
+  width: 180px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+.infoCards .two .cardtwoImg {
+  width: 158px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+.infoCards .three .cardthreeImg {
+  width: 200px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+.cardbgone {
+  height: 150px;
+  background-color: #ffce63;
+}
+
+.cardbgtwo {
+  height: 150px;
+  background-color: #a1cdff;
+}
+
+.cardbgthree {
+  height: 150px;
+  background-color: #ffce63;
+}
+
+.cardContent {
+  padding: 0 20px;
+}
+
+.cardContent h2 {
+  font-weight: 600;
+}
+
+.cardContent p {
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+.cardContent .cardBtn {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  background-color: #ededed;
+  width: 25px;
+  height: 20px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.cardContent .cardBtn .cardIcon {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+}
+
+.cardContent .cardBtn:hover {
+  background-color: #2f8be0;
+}
+
+/* BANNER  */
+.banner {
+  height: 400px;
+  background-color: #ffce63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerText h1 {
+  font-size: 3vw;
+  color: #000000;
+  font-weight: 600;
+}
+
+.bannerText img {
+  width: 10vw;
+  margin-right: 20px;
+}
+
+.bannerImg img {
+  width: 20vw;
+}
+
+/* FOOTER CSS */
+.footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.footerlinks a {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.footerlinks a:hover {
+  color: #e0501b;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.footerlinks .mainlink {
+  color: #e0501b;
+}
+/*# sourceMappingURL=styles.css.map */
